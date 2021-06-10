@@ -1,0 +1,22 @@
+{%extends 'mycbvapp/basic.html'%}
+{%block body_block%}
+<div class="container">
+  <div class="jumbotron">
+    <h1 style='color:purple;'>Welcome to the student details page</h1>
+    <h2 style='color:blue;'>Student Details:</h2>
+    <h4>Name: {{studentdetail.name}}</h4>
+    <h4>{{studentdetail.name}} is {{studentdetail.age}} years old</h4>
+    <h4>{{studentdetail.name}} is student in {{studentdetail.school}}</h4>
+
+  </div>
+  <div class="container">
+    <p><a class="btn btn-primary" href="{%url 'mycbvapp:update' pk=studentdetail.pk%}">Update</a></p>
+
+  </div>
+
+
+
+
+</div>
+
+{%endblock%}

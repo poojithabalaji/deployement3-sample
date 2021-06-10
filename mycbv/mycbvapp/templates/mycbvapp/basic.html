@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>base</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+
+      <nav class="navbar navbar-light" style="background-color: black;">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{%url 'indexview'%}" style="color:white;">Homepage</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav-link" href="{%url 'mycbvapp:list'%}"style="color:white;">Students</a>
+          </li>
+
+          <li class="nav_item">
+            <a class="nav-link" href="{%url 'admin:index'%}" style="color:white;">Login</a>
+          </li>
+
+
+          </ul>
+        </nav>
+  <body style='background:#f2eb80;'>
+    {%block body_block%}
+    {%endblock%}
+  </body>
+</html>

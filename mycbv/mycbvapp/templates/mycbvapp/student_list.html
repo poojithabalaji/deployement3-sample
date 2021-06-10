@@ -1,0 +1,24 @@
+{%extends 'mycbvapp/basic.html'%}
+{%block body_block%}
+<div class="container">
+  <div class="jumbotron">
+    <h1>Welcome to the list of students</h1>
+    <ol>
+    {% for item in students %}
+      <li><a href="{{item.id}}">Name: {{ item.name }}</a></li>
+      <!-- <ul>
+        <li>Age: {{item.age}}</li>
+        <li>School: {{item.school}}</li>
+      </ul> -->
+    {% endfor %}
+    </ol>
+
+
+
+  </div>
+
+</div>
+
+
+
+{%endblock%}

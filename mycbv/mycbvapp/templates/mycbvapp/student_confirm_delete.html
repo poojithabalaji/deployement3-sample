@@ -1,0 +1,10 @@
+{%extends 'mycbvapp/basic.html'%}
+{%block body_block%}
+<h1>Delete: {{student.name}}?</h1>
+<form method="post">
+  {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" class="btn btn-danger" value="Delete">
+    <a class="btn btn-primary" href="{%url 'mycbvapp:details' pk=student.pk%}">cancel</a>
+</form>
+{%endblock%}
